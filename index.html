@@ -9,7 +9,7 @@
     </style>
   </head>
 <body ng-app="LunchCheck">
-   <div ng-controller="LunchCheckController" class="container">
+   <div ng-controller="LCController" class="container">
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
@@ -18,10 +18,11 @@
              class="form-control">
          </div>
          <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
+             <button ng-click="ckif2much()" class="btn btn-default">Check If Too Much</button>
          </div>
          <div class="form-group message">
            <!-- Your message can go here. -->
+           Mensaje: {{msgout}}
          </div>
    </div>
 
